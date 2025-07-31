@@ -2972,5 +2972,17 @@ section#clients {
 }
 .webdesigningcover
 {
-    background-image: url("../img/webdesigning.png");
+    background-image: url("https://ifda.in/images/web-design-&-development.webp");
+}
+.uiuxback
+{
+  background-image: url("https://ifda.in/images/ui-ux-design.webp");
+}
+.frontendback
+{
+  background-image: url("https://ifda.in/images/front-end-development.webp");
+}
+.fullstackbackk
+{
+  background-image: url("https://ifda.in/images/lean-full-stack-web-development.webp");
 }
