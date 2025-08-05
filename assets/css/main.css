@@ -948,7 +948,7 @@ section,
 .about .our-story {
   padding: 40px;
   background-color: #1e1e20;
-  height:600px;
+  /* height:600px; */
 }
 
 #about
@@ -3023,6 +3023,7 @@ section#clients {
     border-radius: 6px;
     text-align: center;
     height:150px;
+    margin-top: 12px;
 }
 .highlights_cour :hover
 {
@@ -3233,3 +3234,19 @@ font-size: 32px;
     {
       margin-top: 2rem;
     }
+
+
+
+ @media (max-width: 576px) {
+  #ourcoursesection {
+    padding: 0 !important;
+  }
+  #course_highlights
+  {
+    padding: 8px;
+  }
+}
+#certified h1
+{
+  text-align: center;
+}
