@@ -3157,3 +3157,80 @@ font-size: 32px;
   overflow: hidden !important;
   margin-left: 10px;
 }
+
+
+
+
+
+
+
+
+ #aboutussection {
+      background-color: #f18a09;
+      padding: 60px 0;
+    }
+
+    .myherocontent h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: #212529;
+    }
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .form-container-custom {
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .form-container-custom .form-control {
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .custom-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    .custom-btn:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 768px) {
+      .myherocontent h1 {
+        font-size: 22px;
+        text-align: center;
+      }
+    }
+    .myherocontent h1
+    {
+      color: #fff;
+    }
+    .newabout
+    {
+      margin-top: 2rem;
+    }
