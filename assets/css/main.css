@@ -3245,6 +3245,10 @@ font-size: 32px;
   {
     padding: 8px;
   }
+  .about .our-story
+  {
+    margin: 0;
+  }
 }
 #certified h1
 {
