@@ -2917,19 +2917,31 @@ section#clients {
 }
 .webdesigningcover
 {
-    background-image: url("https://ifda.in/images/web-design-&-development.webp");
+    background-image: url("https://essencesoftwares.com/wp-content/uploads/2020/10/Web-Development.jpeg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 .uiuxback
 {
-  background-image: url("https://ifda.in/images/ui-ux-design.webp");
+ background-image: url("https://essencesoftwares.com/wp-content/uploads/2020/10/Web-Development.jpeg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 .frontendback
 {
-  background-image: url("https://ifda.in/images/front-end-development.webp");
+  background-image: url("https://essencesoftwares.com/wp-content/uploads/2020/10/Web-Development.jpeg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 .fullstackbackk
 {
-  background-image: url("https://ifda.in/images/lean-full-stack-web-development.webp");
+  background-image: url("https://essencesoftwares.com/wp-content/uploads/2020/10/Web-Development.jpeg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
 }
 .privacy_policy{
   height: 80vh;
