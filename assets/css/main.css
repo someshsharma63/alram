@@ -3106,22 +3106,7 @@ font-size: 32px;
       color: #212529;
     }
 
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%;
-      height: 0;
-      overflow: hidden;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
 
-    .video-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
 
     .form-container-custom {
       background: #ffffff;
@@ -3185,8 +3170,32 @@ font-size: 32px;
   {
     padding:1rem 0;
   }
+  .founderimage
+  {
+    width: unset;
+  }
+  .video-container
+  {
+    width: unset;
+  }
+  .webdesigningcover
+  {
+  background-size: cover;
+    background-position: center center
+  }
 }
 #certified h1
 {
   text-align: center;
+}
+.video-container
+{
+  width:500px;
+  /* height: 500px; */
+}
+.video-container img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
