@@ -1,25 +1,21 @@
 
-/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #111111; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #f18a09; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --background-color: #ffffff; 
+  --default-color: #444444; 
+  --heading-color: #111111; 
+  --accent-color: #f18a09; 
+  --surface-color: #ffffff; 
+  --contrast-color: #ffffff; 
 }
-
-/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
-  --nav-hover-color: #1bbd36; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1bbd36; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #444444;  
+  --nav-hover-color: #1bbd36; 
+  --nav-mobile-background-color: #ffffff; 
+  --nav-dropdown-background-color: #ffffff; 
+  --nav-dropdown-color: #444444; 
+  --nav-dropdown-hover-color: #1bbd36; 
 }
-
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f7f7f7;
@@ -47,16 +43,11 @@
 :root {
   scroll-behavior: smooth;
 }
-
-/*--------------------------------------------------------------
-# General Styling & Shared Classes
---------------------------------------------------------------*/
 body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: "Poppins"!important;
 }
-
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -67,7 +58,6 @@ a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
   text-decoration: none;
 }
-
 h1,
 h2,
 h3,
@@ -78,7 +68,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-/* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
@@ -99,7 +88,6 @@ h6 {
   margin-bottom: 24px;
   font-weight: 600;
 }
-
 .php-email-form .loading {
   display: none;
   background: var(--surface-color);
@@ -107,7 +95,6 @@ h6 {
   padding: 15px;
   margin-bottom: 24px;
 }
-
 .php-email-form .loading:before {
   content: "";
   display: inline-block;
@@ -119,7 +106,6 @@ h6 {
   border-top-color: var(--surface-color);
   animation: php-email-form-loading 1s linear infinite;
 }
-
 @keyframes php-email-form-loading {
   0% {
     transform: rotate(0deg);
@@ -130,9 +116,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Global Header
---------------------------------------------------------------*/
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
@@ -143,7 +126,6 @@ h6 {
 }
 
 .logo {
-    /* width: 180px; */
     height: 70px;
 }
 .logo img
@@ -191,9 +173,6 @@ h6 {
   }
 }
 
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
   .navmenu {
@@ -446,7 +425,6 @@ h6 {
 
 .footer .footer-about .logo {
   line-height: 1;
-  /* margin-bottom: 25px; */
 }
 
 .footer .footer-about .logo img {
@@ -595,37 +573,7 @@ h6 {
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
-#preloader {
-  position: fixed;
-  inset: 0;
-  z-index: 999999;
-  overflow: hidden;
-  background: var(--background-color);
-  transition: all 0.6s ease-out;
-}
 
-#preloader:before {
-  content: "";
-  position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
-  border: 6px solid #ffffff;
-  border-color: var(--accent-color) transparent var(--accent-color) transparent;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: animate-preloader 1.5s linear infinite;
-}
-
-@keyframes animate-preloader {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
 
 /*--------------------------------------------------------------
 # Scroll Top Button
@@ -2920,6 +2868,7 @@ section#clients {
   font-size: 15px;
   font-weight: 400;
   color:#000000a7;
+  text-align: left;
 }
 
 .owl-nav {
@@ -3130,17 +3079,6 @@ font-size: 32px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 @keyframes zoomInOut {
   0% {
     transform: scale(1); /* Original size */
@@ -3158,13 +3096,6 @@ font-size: 32px;
   overflow: hidden !important;
   margin-left: 10px;
 }
-
-
-
-
-
-
-
 
  #aboutussection {
       background-color: #f18a09;
