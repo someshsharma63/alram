@@ -2815,9 +2815,6 @@ section#clients {
       transform: rotate(360deg);
     }
 }
-
-
-
 .new
 {
   margin-top: 60px;
@@ -3179,6 +3176,14 @@ font-size: 32px;
   .about .our-story
   {
     margin: 0;
+  }
+  .ourcources
+  {
+    padding: unset;
+  }
+  .whyus
+  {
+    padding:1rem 0;
   }
 }
 #certified h1
