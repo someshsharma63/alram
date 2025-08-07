@@ -53,10 +53,10 @@
         <div class="row align-items-center justify-content-between">
               <div class="col-lg-6 col-md-6 col-sm-12">
                    <div class="icon_list">
-                     <a href="#"><i class="fa-solid fa-phone">  </i>+91 9521167580
+                     <a href="tel:95211 67580"><i class="fa-solid fa-phone">  </i>+919521167580
 </a>
 
-                       <a href="#"><i class="fa-solid fa-envelope"></i>info@alramacademy.com </a>
+                       <a href="mailto:info@alramacademy.com"><i class="fa-solid fa-envelope"></i>info@alramacademy.com </a>
                    </div> 
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12">
@@ -71,38 +71,36 @@
     </div>
 </div>
 <body class="index-page">
-  
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
         <div class="logo" >
             <img src="./assets/img/logo.png" alt="" >
         </div>
       </a>
-
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-             <li class="dropdown"><a href="about.html"><span>Our Cources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-             
-              <li><a href="webdesign.html">Web Designing</a></li>
-              <li><a href="uiux_design.html">UI UX Designing</a></li>
-              <li><a href="frontend_development.html">Fronted Developement</a></li>
-               <li><a href="./fullstackedev.html">Full Stack Developement</a></li>
-         
-            </ul>
+          <li><a href="#">About</a></li>
+          <!-- <i class="bi bi-chevron-down toggle-dropdown"></i> -->
+             <li class="dropdown"><a href="#"><span>Our Cources</span> 
+              </a>
+            <!-- <ul>
+            
+              <li><a href="#">Web Designing</a></li>
+              <li><a href="#">UI UX Designing</a></li>
+              <li><a href="#">Fronted Developement</a></li>
+               <li><a href="#">Full Stack Developement</a></li>
+            </ul> -->
           </li>
         
-             <li><a href="team.html">Our Trainers</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
+             <li><a href="#">Our Trainers</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
 
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modalbtn">
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="modalbtn">
   BOOK FREE DEMO
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -112,28 +110,42 @@
         <h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-        <div class="bookfreecall">
-            <form class="row g-3">
-               <div class="col-md-12">
-    <label for="inputname" class="form-label">Name</label>
-    <input type="text" class="form-control" id="inputName">
-  </div>
-  <div class="col-md-12">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
-  </div>
-    <div class="col-md-12">
-    <label for="inputNumber" class="form-label">Number</label>
-    <input type="number" class="form-control" id="inputNumber">
-  </div>
-  <div class="input-group">
-  <span class="input-group-text">Message</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
-</form>
-        </div>
+     <!-- Inside your modal-body -->
+<div class="modal-body">
+  <div class="bookfreecall">
+    <form class="row g-3" id="contactForm">
+      <!-- Name -->
+      <div class="col-md-12">
+        <label for="inputName" class="form-label">Name</label>
+        <input type="text" class="form-control" id="inputName" name="name" required>
       </div>
+
+      <!-- Email -->
+      <div class="col-md-12">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" name="email" required>
+      </div>
+
+      <!-- Phone Number -->
+      <div class="col-md-12">
+        <label for="inputNumber" class="form-label">Phone Number</label>
+        <input type="tel" class="form-control" id="inputNumber" name="phone" required>
+      </div>
+
+      <!-- Message -->
+      <div class="col-md-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="col-12">
+        <button type="submit" class="btn btn-success w-100">Yes, I am Interested</button>
+      </div>
+    </form>
+  </div>
+</div>
+
       <div class="modal-footer submitdemo">
        
         <button type="button" class="btn btn-primary">Submit</button>
@@ -141,7 +153,6 @@
     </div>
   </div>
 </div>
-       
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -162,12 +173,12 @@
 
         <div class="d-flex flex-column flex-sm-row gap-3 newabout">
   <!-- Call Now Button -->
-  <a href="tel:+911234567890" class="btn btn-primary w-100">
+  <a href="tel:+95211 67580" class="btn btn-primary w-100">
     📞 Call Now
   </a>
 
   <!-- WhatsApp Button -->
-  <a href="https://wa.me/911234567890" class="btn btn-success w-100" target="_blank">
+  <a href="https://wa.me/9521167580" class="btn btn-success w-100" target="_blank">
     💬 WhatsApp Us
   </a>
 </div>
@@ -201,7 +212,6 @@
     </div>
   </div>
 </section>
-
 <!-- certified section starts -->
 
 <section id="certified">
@@ -250,7 +260,7 @@
 
               <div class="watch-video d-flex align-items-center position-relative">
                 <div class="enroll">
-                   <a href="./blog.html">Enroll now</a>
+                   <a href="tel:919521167580">Enroll now</a>
                 </div>
               </div>
             </div>
@@ -269,14 +279,14 @@
                 <div class="our_cources_content">
                    <div class="card">
                     <div class="courceimagesdes">
-                        <a href="./webdesign.html">
+                        <a href="#">
                            <img src="./assets/img/web_design.jpg" class="card-img-top" alt="..." ></a>
                     </div>
                       <div class="card-body">
                         <h5 class="card-title">Web Designing</h5>
                         <p class="card-text">This course offers an engaging and interactive approach  to learn the fundamentals of web design.</p>
                      <div class="enroll viewmore">
-                   <a href="./webdesign.html">View More</a>
+                   <a href="#">View More</a>
                 </div>
                       </div>
                     </div>
@@ -286,13 +296,13 @@
                 <div class="our_cources_content">
                    <div class="card">
                      <div class="courceimagesdes">
-                      <a href="./uiux_design.html"> <img src="./assets/img/ourcources/uiuxcou.avif" class="card-img-top" alt="..." ></a> 
+                      <a href="#"> <img src="./assets/img/ourcources/uiuxcou.avif" class="card-img-top" alt="..." ></a> 
                       </div>
                       <div class="card-body">
                         <h5 class="card-title">Ui Ux Designing</h5>
                         <p class="card-text">UI/UX design is all about creating meaningful, easy-to-use, and visually appealing digital experiences.</p>
                      <div class="enroll viewmore">
-                   <a href="./uiux_design.html">View More</a>
+                   <a href="#">View More</a>
                 </div>
                       </div>
                     </div>
@@ -303,13 +313,13 @@
                 <div class="our_cources_content">
                    <div class="card">
                      <div class="courceimagesdes">
-                    <a href="./frontend_development.html"> <img src="./assets/img/ourcources/frotnend.webp" class="card-img-top" alt="..." ></a> 
+                    <a href="#"> <img src="./assets/img/ourcources/frotnend.webp" class="card-img-top" alt="..." ></a> 
                       </div>
                       <div class="card-body">
                         <h5 class="card-title">Frontend Development</h5>
                         <p class="card-text">Frontend development refers to the part of web development that focuses on the user interface (UI) and user experience (UX).</p>
                      <div class="enroll viewmore">
-                   <a href="./frontend_development.html">View More</a>
+                   <a href="#">View More</a>
                 </div>
                       </div>
                     </div>
@@ -319,13 +329,13 @@
                 <div class="our_cources_content">
                    <div class="card">
                      <div class="courceimagesdes">
-                     <a href="./fullstackedev.html"><img src="./assets/img/ourcources/fullstack.png" class="card-img-top" alt="..." ></a> 
+                     <a href="#"><img src="./assets/img/ourcources/fullstack.png" class="card-img-top" alt="..." ></a> 
                       </div>
                       <div class="card-body">
                         <h5 class="card-title">Full Stack Developement</h5>
                         <p class="card-text">Full Stack Development refers to the ability to work on both the frontend (client-side) and backend  of a web application..</p>
                      <div class="enroll viewmore">
-                   <a href="./fullstackedev.html">View More</a>
+                   <a href="#">View More</a>
                 </div>
                       </div>
                     </div>
@@ -336,11 +346,11 @@
                 <div class="our_cources_content">
                    <div class="card">
                            <div class="courceimagesdes">
-                     <a href="#"> <img src="./assets/img/ourcources/ecommerce.webp" class="card-img-top" alt="..." ></a>
+                     <a href="#"> <img src="./assets/img/ourcources/backenddev.png" class="card-img-top" alt="..." ></a>
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title">Ecommerce Selling.</h5>
-                        <p class="card-text">This course offers Business models: B2C, B2B, dropshipping, private label, print-on-demand.</p>
+                        <h5 class="card-title">Backend Developement.</h5>
+                        <p class="card-text">Server-side logic and infrastructure that power websites and applications. </p>
                      <div class="enroll viewmore">
                    <a href="#">View More</a>
                 </div>
@@ -407,7 +417,7 @@
               <a href="service-details.html" class="stretched-link">
                 <h3>Starting Date</h3>
               </a>
-              <p>New Batch Starting From 16th July 2025</p>
+              <p>New Batch Starting From 12th August 2025</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -422,9 +432,9 @@
               </div>
                <div class="batches">
               <a href="service-details.html" class="stretched-link">
-                <h3>Morning Batch</h3>
+                <h3>Evening Batch</h3>
               </a>
-              <p>Morning Batch 08:00 AM to 09:00 AM.</p>
+              <p>Evening Batch 04:00 PM to 05:00 PM.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -448,7 +458,6 @@
           </div><!-- End Service Item -->
         </div>
       </div>
-
     </section><!-- /Services Section -->
 
     <!-- Portfolio Section -->
@@ -636,7 +645,7 @@
           </div>
       </div>
         <div class="enroll bookdemo">
-                   <a href="./contact.html">Book A Demo Class</a>
+                   <a href="tel:919521167580">Book A Demo Class</a>
                 </div>
       </div>
     </section>
@@ -732,12 +741,12 @@
             <div class="col-lg-4 col-md-3 col-sm-12 footer-links">
           <h4>Our Cources</h4>
           <ul>
-            <li><a href="./webdesign.html">Web Design</a></li>
-            <li><a href="./uiux_design.html">Ui Ux Design</a></li>
-            <li><a href="./fullstackedev.html">Digital Marketing</a></li>
-            <li><a href="./fullstackedev.html">Ecommerce Selling.</a></li>
-              <li><a href="./fullstackedev.html">Full Stack Developement</a></li>
-               <li><a href="./frontend_development.html">Frontend Developement</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Ui Ux Design</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <!-- <li><a href="#">Ecommerce Selling.</a></li> -->
+              <li><a href="#">Full Stack Developement</a></li>
+               <li><a href="#">Frontend Developement</a></li>
           </ul>
         </div>
 
@@ -747,8 +756,8 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Our Trainers</a></li>
-            <li><a href="./terms_condition.html">Terms & Condition</a></li>
-            <li><a href="./privacy_policy.html">Privacy policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Privacy policy</a></li>
           </ul>
         </div>
 
@@ -821,6 +830,23 @@
         992: { items: 3 }
     }
 });
+
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Optionally: validate or save the data here
+    const name = document.getElementById("inputName").value;
+
+    // Store data in session/localStorage if needed
+    sessionStorage.setItem("userName", name);
+
+    // Redirect to welcome page
+    window.location.href = "welcome.html";
+  });
+
+
+
+
 </script>
   
 
