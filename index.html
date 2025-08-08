@@ -132,7 +132,7 @@
       </div>
 
       <!-- Form -->
-     <div class="col-md-6 col-sm-12">
+     <!-- <div class="col-md-6 col-sm-12">
         <form id="interestForm">
   <div class="mb-3">
     <label for="name" class="form-label">Name</label>
@@ -174,10 +174,40 @@
 </script>
 
    
-  </div>
+  </div> -->
+
+    <div class="col-lg-6 col-md-6 col-sm-12">
+      <div class="form-group">
+        <h2>Enquiry Form</h2>
+         <form action="https://api.web3forms.com/submit" method="POST" name="">
+
+    <input type="hidden" name="access_key" value="d6938b30-d674-41c3-8796-1105b1307dbe">
+
+          <label for="username">Username</label>
+             <input type="text" name="name" required  class="form-control" id="usernamedata" aria-describedby="usernamehelp" placeholder="Enter your name"><br>
+             <label for="username">Email</label>
+             <input type="email" name="email" required class="form-control" id="usernamedata" aria-describedby="usernamehelp" placeholder="Enter your Email"><br>
+             <label for="message">Message</label>
+              <textarea name="message" required class="form-control" id="messagedata" aria-describedby="usernamehelp"></textarea><br>
+              
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    <button type="submit" class="btn btn-primary">Submit Form</button>
+    <input type="hidden" name="apikey" value="d6938b30-d674-41c3-8796-1105b1307dbe">
+</form>
+              
+      </div>
+        
+ 
+ 
+    
+   
+    </div>
+
+
+
+
+
 </div>
-
-
     </div>
   </div>
 </section>
